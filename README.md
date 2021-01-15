@@ -1,4 +1,4 @@
-# football-score
+# uefa-champions-league
 
 ## Build Setup
 
