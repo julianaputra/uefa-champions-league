@@ -17,28 +17,12 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item>
-              <nuxt-link to="/" tag="li"> Home </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/standings" tag="li"> Standings </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/matches" tag="li"> Matches </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/teams" tag="li"> Teams </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/favorites_match" tag="li">
-                Favorites Match
-              </nuxt-link>
-            </b-nav-item>
-            <b-nav-item>
-              <nuxt-link to="/favorites_team" tag="li">
-                Favorites Team
-              </nuxt-link>
-            </b-nav-item>
+            <b-nav-item to="/"> Home </b-nav-item>
+            <b-nav-item to="/standings"> Standings </b-nav-item>
+            <b-nav-item to="/matches"> Matches </b-nav-item>
+            <b-nav-item to="/teams"> Teams </b-nav-item>
+            <b-nav-item to="/favorites_match"> Favorites Match </b-nav-item>
+            <b-nav-item to="/favorites_team"> Favorites Team </b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
@@ -64,20 +48,22 @@
 
 .navbar {
   border-bottom: 2px solid #f6f7f8;
+  padding: 0px !important;
+}
+
+.nav-item {
+  padding: 0 1.2rem !important;
 }
 
 .nav-item .nav-link {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  font-weight: bold;
+  color: #caced3 !important;
+  border-bottom: 3px solid #fff;
+  padding: 0.7rem 0 !important;
 }
 
-.nav-item .nav-link li {
-  font-weight: 600;
-  color: #caced3;
-}
-
-.nav-item .nav-link .nuxt-link-exact-active {
-  color: #11263c;
+.nav-item .nuxt-link-exact-active {
+  color: #11263c !important;
   font-weight: bold;
   border-bottom: 3px solid #623cea;
 }
